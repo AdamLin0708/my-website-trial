@@ -269,5 +269,97 @@ form.contact-form {
   background: white;  
 }
 
+@media screen and (min-width: 1024px) {
+  .menu-button {
+    display: none;
+  }
+}
+
+
+@media screen and (max-width: 1023px){
+  /*
+    寫手機版的css
+  */
+  .container {
+    width: 100%;
+  }
+
+  .menu-button {
+    float: right;
+    font-size: 25px;
+    line-height: 40px;
+    color: white;
+    background: transparent;
+    padding: 0 15px;
+    border: 0;
+  }
+
+  .menu-button-checkbox {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 55px;
+    height: 40px;
+  }
+
+  .menu-button-checkbox:checked ~ .menu {
+    display: block;
+  }
+
+  .menu {
+    display: none;  
+    margin-top: 0;
+    padding-left: 0;
+    position: fixed;
+    right: 0;
+    top: 40px;
+    width: 150px;
+    height: 100%;
+    background: black;
+  }
+
+  .menu li {
+    border: 0;
+    border-radius: 0;
+    width: 100%;
+  }
+
+  #about {
+    width: 100%; 
+    margin-left: 0;
+  }
+
+  #my-info > table{
+    font-size: x-small;
+  }
+
+  #my-photo {    
+    position: relative;
+    width: 100%;       
+    height: 300px;
+    margin-bottom: 10px;
+  }
+
+  #my-photo img{      
+    position: absolute;
+    width: 60%;        
+    margin-left: 20%;
+    top: 0;        
+    border-radius: 50%;
+  }
+
+  #my-work-gallery {
+    width: 100%;    
+  }
+
+  .item {
+    max-width: 100%;
+  }
+
+  form.contact-form {
+    width: 80%;
+  }
+}
+
 
 
